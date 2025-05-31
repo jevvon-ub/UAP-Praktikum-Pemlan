@@ -53,7 +53,7 @@ public class Torus extends Shape
     // dengan override dari interface MassConverter dan menggunakan konstanta
     // DENOMINATOR
     public double gramToKilogram() {
-        return getMass() / DENOMINATOR;
+        return Math.ceil(getMass() / DENOMINATOR);
     }
 
     @Override

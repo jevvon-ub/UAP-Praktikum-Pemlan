@@ -50,7 +50,7 @@ public class Sphere extends Shape
     // dengan overide dari interface MassConverter dan menggunakan konstanta
     // DENOMINATOR
     public double gramToKilogram() {
-        return getMass() / DENOMINATOR;
+        return Math.ceil(getMass() / DENOMINATOR);
     }
 
     @Override
